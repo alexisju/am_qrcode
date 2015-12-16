@@ -11,7 +11,7 @@ The directory structure should look like:
 ```
 +-- tpl
     +-- plugins
-        +-- qrcode-albinomouse
+        +-- qrcode_albinomouse
             +-- README.md
 			+-- qr-1.1.3.js
 			+-- qr-1.1.3.min.js
@@ -26,5 +26,5 @@ To enable the plugin, add `'qrcode-albinomouse'` to your list of enabled plugins
 . This should look like:
 
 ```
-$GLOBALS['config']['PLUGINS'] = array('social', 'any_other_plugin', 'qrcode-albinomouse')
+$GLOBALS['config']['PLUGINS'] = array('social', 'any_other_plugin', 'qrcode_albinomouse')
 ```
