@@ -12,9 +12,9 @@
  *
  * @return mixed - linklist data with qrcode plugin.
  */
-function hook_qrcode-albinomouse_render_linklist($data)
+function hook_qrcode_albinomouse_render_linklist($data)
 {
-    $qrcode_html = file_get_contents(PluginManager::$PLUGINS_PATH . '/qrcode-albinomouse/qrcode.html');
+    $qrcode_html = file_get_contents(PluginManager::$PLUGINS_PATH . '/qrcode_albinomouse/qrcode.html');
 
     foreach ($data['links'] as &$value) {
         $qrcode = sprintf($qrcode_html, $value['real_url'], $value['real_url'], PluginManager::$PLUGINS_PATH);
@@ -31,10 +31,10 @@ function hook_qrcode-albinomouse_render_linklist($data)
  *
  * @return mixed - footer data with qrcode JS files added.
  */
-function hook_qrcode-albinomouse_render_footer($data)
+function hook_qrcode_albinomouse_render_footer($data)
 {
     if ($data['_PAGE_'] == Router::$PAGE_LINKLIST) {
-        $data['js_files'][] = PluginManager::$PLUGINS_PATH . '/qrcode-albinomouse/shaarli-qrcode.js';
+        $data['js_files'][] = PluginManager::$PLUGINS_PATH . '/qrcode_albinomouse/shaarli-qrcode.js';
     }
 
     return $data;
@@ -47,10 +47,10 @@ function hook_qrcode-albinomouse_render_footer($data)
  *
  * @return mixed - header data with qrcode CSS file added.
  */
-function hook_qrcode-albinomouse_render_includes($data)
+function hook_qrcode_albinomouse_render_includes($data)
 {
     if ($data['_PAGE_'] == Router::$PAGE_LINKLIST) {
-        $data['css_files'][] = PluginManager::$PLUGINS_PATH . '/qrcode-albinomouse/qrcode.css';
+        $data['css_files'][] = PluginManager::$PLUGINS_PATH . '/qrcode_albinomouse/qrcode.css';
     }
 
     return $data;
