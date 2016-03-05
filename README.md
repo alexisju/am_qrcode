@@ -11,7 +11,7 @@ The directory structure should look like:
 ```
 +-- tpl
     +-- plugins
-        +-- qrcode_albinomouse
+        +-- am_qrcode
             +-- README.md
 			+-- qr-1.1.3.js
 			+-- qr-1.1.3.min.js
@@ -22,9 +22,9 @@ The directory structure should look like:
 			
 ```
 
-To enable the plugin, add `'qrcode-albinomouse'` to your list of enabled plugins in `data/options.php` (`PLUGINS` array)
+To enable the plugin, add `'am_qrcode'` to your list of enabled plugins in `data/options.php` (`PLUGINS` array)
 . This should look like:
 
 ```
-$GLOBALS['config']['PLUGINS'] = array('social', 'any_other_plugin', 'qrcode_albinomouse')
+$GLOBALS['config']['PLUGINS'] = array('social', 'any_other_plugin', 'am_qrcode')
 ```
