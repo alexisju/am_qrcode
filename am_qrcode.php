@@ -12,7 +12,7 @@
  *
  * @return mixed - linklist data with qrcode plugin.
  */
-function hook_qrcode_albinomouse_render_linklist($data)
+function hook_am_qrcode_render_linklist($data)
 {
     $qrcode_html = file_get_contents(PluginManager::$PLUGINS_PATH . '/am_qrcode/qrcode.html');
 
