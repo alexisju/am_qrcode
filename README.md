@@ -6,20 +6,19 @@ This plugin is based on default shaarli's qrcode plugin. It differs by CSS and h
 
 ### Installation/configuration
 
-Clone this repository inside your `tpl/plugins/` directory, or download the archive and unpack it there.  
+Clone this repository inside your `/plugins/` directory, or download the archive and unpack it there.  
 The directory structure should look like:
 
 ```
-└── tpl
-	└── plugins
-		└── am_qrcode
-			├── README.md
-			├── qr-1.1.3.js
-			├── qr-1.1.3.min.js
-			├── qrcode.html
-			├── qrcode.php
-			├── qrcode.png
-			└── shaarli-qrcode.js
+└── plugins
+	└── am_qrcode
+		├── README.md
+		├── qr-1.1.3.js
+		├── qr-1.1.3.min.js
+		├── qrcode.html
+		├── qrcode.php
+		├── qrcode.png
+		└── shaarli-qrcode.js
 			
 ```
 
